@@ -1,0 +1,26 @@
+[project]
+name = "nq-finance"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kaoniqiwa", email = "1061886912@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.0.6",
+    "streamlit>=1.65.0",
+    "streamlit-aggrid>=1.2.1.post2",
+]
+
+[project.scripts]
+nq-finance = "nq_finance:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev=[
+    "ruff>=0.17.0",
+]
